@@ -1,0 +1,29 @@
+.home-page-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.hero-text {
+  max-width: 46ch;
+  align-self: flex-start;
+  padding: 0.6rem;
+
+  button {
+    margin-top: 2rem;
+  }
+}
+
+.picture {
+  width: clamp(300px, 50%, 500px);
+
+  img {
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: 6px 6px 0px black;
+    border: 3px solid black;
+  }
+}
