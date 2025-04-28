@@ -6,6 +6,37 @@
   padding: 0;
 }
 
+:root {
+    --primary-color: #8B4513;     /* Rich brown (like wood or coffee) */
+    --secondary-color: #C29D75;   /* Soft golden beige (for warmth) */
+    --accent-color: #D32F2F;      /* Deep red (for appetite and passion) */
+    --background-color: #FFF8F0;  /* Light cream (easy on the eyes) */
+    --text-color: #2C2C2C;        /* Dark gray (for elegant text) */
+    --button-color: #A52A2A;      /* Warm brown-red (for buttons) */
+    --button-text-color: #FFFFFF; /* White (button text stands out) */
+    --nav-background: #5C4033;    /* Deep chocolate brown (navbar background) */
+    --nav-text-color: #F5F5F5;    /* Light grayish white (navbar text) */
+  }
+  
+
 body{
-    
+   background-color: var(--background-color); 
+}
+
+header{
+    width: 100%;
+    height: 16dvh;
+    box-shadow: 0px 0px 4px black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
 }
