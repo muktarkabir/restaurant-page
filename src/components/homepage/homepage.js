@@ -1,7 +1,7 @@
 import "./homepage.css";
 import heroImagePath from "../../assets/images/Sunny-Frantz.jpg";
 
-export default function createHomepage() {
+export default function () {
   const homePageContainer = document.createElement("div");
   homePageContainer.classList.add("home-page-content");
 
