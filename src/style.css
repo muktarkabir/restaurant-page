@@ -16,11 +16,12 @@
     --button-text-color: #FFFFFF; /* White (button text stands out) */
     --nav-background: #5C4033;    /* Deep chocolate brown (navbar background) */
     --nav-text-color: #F5F5F5;    /* Light grayish white (navbar text) */
+    --bgc-purple:rgb(192, 161, 239);
   }
   
 
 body{
-   background-color: var(--background-color); 
+   background-color: var(--bgc-purple); 
 }
 
 header{
@@ -39,4 +40,5 @@ button{
     border-radius: 10px;
     background-color: var(--button-color);
     color: var(--button-text-color);
+    cursor: pointer;
 }
