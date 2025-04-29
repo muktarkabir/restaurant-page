@@ -2,6 +2,10 @@ import "./aboutpage.css";
 
 export default function () {
   const container = document.createElement("div");
+  container.classList.add("container");
+  const section1 = document.createElement("section");
+  const section2 = document.createElement("section");
+  const section3 = document.createElement("section");
 
   const firstHeading = document.createElement("h1");
   const introductionLine = document.createElement("h4");
@@ -22,16 +26,31 @@ export default function () {
   secondHeading.textContent = "Our Philosophy";
   thridHeading.textContent = "Our Promise";
 
-  introductionLine.textContent ="Welcome to Eat.com — where every meal feels like coming home.";
-  firstParagraph.textContent = `At [Restaurant Name], we believe food brings people together.\nOur story began in [Year] with a simple vision:\nto serve authentic, delicious meals made from the freshest local ingredients, in a warm and welcoming atmosphere.`;
-  secondParagraph.textContent = `Every dish we prepare is crafted with passion, tradition, and a love for real flavors.\nFrom hand-tossed pizzas to chef-inspired entrees, we aim to create a dining experience you'll want to return to again and again.`;  
-  
+  introductionLine.textContent =
+    "Welcome to Eat.com — where every meal feels like coming home.";
+  firstParagraph.textContent = `At Eat.com, we believe food brings people together.\nOur story began in 2025 with a simple vision:\n to serve authentic, delicious meals made from the freshest local ingredients, in a warm and welcoming atmosphere.`;
+  secondParagraph.textContent = `Every dish we prepare is crafted with passion, tradition, and a love for real flavors.\nFrom hand-tossed pizzas to chef-inspired entrees, we aim to create a dining experience you'll want to return to again and again.`;
+
   firstPhilosophy.innerHTML = `Fresh Ingredients — We partner with local farmers and markets to bring the best seasonal produce straight to your plate`;
   secondPhilosophy.innerHTML = `Crafted with Care — Every meal is made from scratch with attention to detail and quality.`;
   thirdPhilosophy.innerHTML = `A Place for Everyone — Whether it's a casual lunch, a family gathering, or a special celebration, you'll find a warm welcome here.`;
-  
-  thePromise.textContent = "We're more than just a place to eat — we're a place to celebrate, connect, and create lasting memories.";
-  closingRemarks.textContent = "Thank you for being part of our story.\nWe can't wait to serve you soon."
-  return container;
 
+  thePromise.textContent =
+    "We're more than just a place to eat — we're a place to celebrate, connect, and create lasting memories.";
+  closingRemarks.textContent =
+    "Thank you for being part of our story.\nWe can't wait to serve you soon.";
+
+  philosophies.append(firstPhilosophy, secondPhilosophy, thirdPhilosophy);
+
+  section1.append(
+    firstHeading,
+    introductionLine,
+    firstParagraph,
+    secondParagraph
+  );
+  section2.append(secondHeading, philosophies);
+  section3.append(thridHeading, thePromise, closingRemarks);
+
+  container.append(section1, section2, section3);
+  return container;
 }
