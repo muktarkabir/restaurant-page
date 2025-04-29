@@ -7,15 +7,9 @@
 }
 
 :root {
-  --primary-color: #8b4513; /* Rich brown (like wood or coffee) */
-  --secondary-color: #c29d75; /* Soft golden beige (for warmth) */
-  --accent-color: #d32f2f; /* Deep red (for appetite and passion) */
   --background-color: #ffffff; /* Light cream (easy on the eyes) */
-  --text-color: #2c2c2c; /* Dark gray (for elegant text) */
-  --button-color:  rgb(255, 236, 168); /* Warm brown-red (for buttons) */
+  --button-color: rgb(255, 236, 168); /* Warm brown-red (for buttons) */
   --button-text-color: #000000; /* White (button text stands out) */
-  --nav-background: #5c4033; /* Deep chocolate brown (navbar background) */
-  --nav-text-color: #f5f5f5; /* Light grayish white (navbar text) */
   --bgc-purple: rgb(192, 161, 239);
   --button-box-shadow: 3px 3px 0 black;
   --header-height: 16dvh;
@@ -47,11 +41,23 @@ header {
   height: var(--header-height);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 2px solid black;
   background-color: var(--background-color);
   img {
     margin-right: 30%;
     margin-left: 1rem;
+  }
+}
+
+nav {
+  margin-right: 16px;
+  display: flex;
+  gap: 10px;
+  width: min(70%, 300px);
+
+  button {
+    width: 33.33%;
   }
 }
 button {
@@ -72,4 +78,3 @@ button {
   padding: 0.8rem;
   display: flex;
 }
-
