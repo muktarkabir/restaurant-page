@@ -19,7 +19,6 @@
 }
 
 body {
-  background-color: var(--bgc-purple);
   display: flex;
   flex-direction: column;
   font-family: var(--font-stack);
@@ -74,7 +73,23 @@ button {
 }
 
 #content {
-  max-height: var(--content-height);
+  min-height: var(--content-height);
   padding: 0.8rem;
   display: flex;
+  background-color: var(--bgc-purple);
+}
+
+footer{
+  height: calc(var(--header-height) - 6dvh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .6rem;
+  background-color: var(--background-color);
+border-top: 2px solid black;
+
+a{
+  text-decoration: none;
+}
+
 }
