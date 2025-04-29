@@ -1,7 +1,7 @@
 import "./style.css";
-import homepage from "./components/homepage/homepage.js";
-import menupage from "./components/menupage/menupage.js";
-import aboutpage from "./components/aboutpage/aboutpage.js";
+import homepage from "./modules/homepage/homepage.js";
+import menupage from "./modules/menupage/menupage.js";
+import aboutpage from "./modules/aboutpage/aboutpage.js";
 
 const content = document.querySelector("#content");
 
