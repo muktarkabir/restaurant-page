@@ -5,6 +5,7 @@
   width: 100%;
   flex-wrap: wrap;
   gap: 0.9rem;
+  margin-top: .8rem;
 }
 
 .hero-text {
@@ -12,6 +13,15 @@
   align-self: flex-start;
   padding: 0.6rem;
 
+  span {
+    text-transform: capitalize;
+    color: white;
+  }
+
+  p{
+  text-align: start;
+
+  }
   button {
     margin-top: 2rem;
   }

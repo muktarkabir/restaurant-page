@@ -9,9 +9,9 @@ export default function () {
   heroTextContainer.classList.add("hero-text");
   const headLine = document.createElement("h1");
   const headLineSpan = document.createElement("span");
-  headLineSpan.textContent = "Eat.com";
+  headLineSpan.textContent = "Eat.com ";
   headLine.appendChild(headLineSpan);
-  headLine.textContent += "Your ultimate destination for delicious food";
+  headLine.innerHTML += "Your ultimate destination for delicious food";
   const loremText = document.createElement("p");
   loremText.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. A natusquos ea, rerum eum dolorum qui incidunt veritatis inventore minuseligendi. Laborum, sunt voluptatem asperiores quis magnam rationeculpa laudantium?`;
   const expLoreButton = document.createElement("button");
